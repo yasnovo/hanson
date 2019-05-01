@@ -10,21 +10,21 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter ListView Demo'),
+      home: new TaskListPage(title: 'TODO Demo'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class TaskListPage extends StatefulWidget {
+  TaskListPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _TaskListPageState createState() => new _TaskListPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _TaskListPageState extends State<TaskListPage> {
   List<String> _counter = new List<String>();
 
   void _incrementCounter() {
